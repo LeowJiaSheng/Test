@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".Login">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+        android:id="@+id/Login_Button"
+        android:layout_width="154dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="532dp"
+        android:backgroundTint="#FDD184"
+
+        android:fontFamily="sans-serif"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="#000000"
+
+
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:layout_marginBottom="303dp"
+        android:ems="10"
+        android:textColorHint="@color/black"
+        android:hint="@string/prompt_email"
+
+        android:textColor="@color/black"
+
+        android:inputType="textWebEmailAddress|textPersonName"
+        android:minHeight="48dp"
+        android:background="@color/white"
+
+        app:layout_constraintBottom_toTopOf="@+id/Login_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/prompt_password"
+        android:textColorHint="@color/black"
+        android:minHeight="48dp"
+
+        android:textColor="@color/black"
+        android:background="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/backBtn"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:rotation="91"
+        android:src="@android:drawable/arrow_down_float"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
