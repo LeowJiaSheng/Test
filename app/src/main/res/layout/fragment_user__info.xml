@@ -12,8 +12,8 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="60dp"
         android:src="@drawable/name_icon"
         app:layout_constraintEnd_toStartOf="@+id/UserName"
         app:layout_constraintTop_toBottomOf="@+id/InfoTitle" />
@@ -35,49 +35,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <EditText
         android:id="@+id/UserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="36dp"
+        android:hint="Name"
         android:minWidth="100dp"
         android:minHeight="30dp"
-
-
         android:text=""
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/InfoTitle" />
 
-    <TextView
+    <EditText
         android:id="@+id/Birthday"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
+        android:hint="Birthday"
         android:minWidth="100dp"
         android:minHeight="30dp"
-
-
         android:text=""
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/UserName" />
 
-    <TextView
+    <EditText
         android:id="@+id/Address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
+        android:hint="Address"
         android:minWidth="100dp"
         android:minHeight="30dp"
-
-
         android:text=""
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Birthday" />
 
-    <TextView
+    <EditText
         android:id="@+id/Gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -85,23 +85,23 @@
         android:layout_marginTop="40dp"
         android:minWidth="100dp"
         android:minHeight="30dp"
-
-
+        android:hint="Gender"
+        android:textColor="@color/black"
         android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Address" />
 
-    <TextView
+    <EditText
         android:id="@+id/PhonoNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
+        android:hint="Phone Number"
         android:minWidth="100dp"
         android:minHeight="30dp"
-
-
         android:text=""
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Gender" />
 
@@ -110,13 +110,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="44dp"
 
-        android:layout_marginBottom="136dp"
+        android:layout_marginBottom="120dp"
         android:backgroundTint="#FDD184"
         android:text="====>"
         android:textColor="@color/black"
         android:textStyle="bold"
+
+
+        app:cornerRadius="20dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -124,8 +128,8 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="60dp"
         android:src="@drawable/birthday_icon"
         app:layout_constraintEnd_toStartOf="@+id/Birthday"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -135,27 +139,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginEnd="60dp"
         android:src="@drawable/location_icon"
         app:layout_constraintEnd_toStartOf="@+id/Address"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="84dp"
+        android:layout_width="33dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="60dp"
         android:src="@drawable/gender_icon"
         app:layout_constraintEnd_toStartOf="@+id/Gender"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="84dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="60dp"
         android:src="@drawable/phone_icon"
         app:layout_constraintEnd_toStartOf="@+id/PhonoNo"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />

@@ -23,7 +23,7 @@ public class Front_Page extends Fragment {
 
 
     View v;
-    Button login;
+    Button Login,SignUp;
 
 
 
@@ -31,6 +31,10 @@ public class Front_Page extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+//        Login = getView().findViewById(R.id.Login_Button);
+//        SignUp = getView().findViewById(R.id.SignUp_Button);
+
 
 
         v = inflater.inflate(R.layout.fragment_front__page, container, false);

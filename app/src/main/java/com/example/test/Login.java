@@ -30,7 +30,7 @@ public class Login extends Fragment{
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-
+        login = getView().findViewById(R.id.LoginBtn);
 
 
 

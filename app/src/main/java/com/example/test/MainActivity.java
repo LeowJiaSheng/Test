@@ -10,40 +10,54 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 
-import android.content.Intent;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+
 
 
 public class MainActivity extends AppCompatActivity {
 
+
+    Login LoginPage = new Login();
+    SignUp SignUp_Page = new SignUp();
+    Front_Page FrontPage = new Front_Page();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         int main = R.layout.activity_main;
         setContentView(main);
 
+        setContentView(FrontPage.getView());
+
+
+        //Setup the login button & sign up button on front page
+
+        Button LoginFrag = findViewById(FrontPage.Login.getId());
+        Button SignUpFrag = findViewById(FrontPage.SignUp.getId());
 
 
 
-        int v = R.layout.fragment_front__page;
-        setContentView(v);
-
-        //Setup the login button on front page
-        Button LoginFrag = findViewById(R.id.Login_Button);
-        Button SignUpFrag = findViewById(R.id.SignUp_Button);
 
 
         LoginFrag.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 //This make the layout from main activity invisible, thus login view can be visible
                 LoginFrag.setVisibility(View.GONE);
 
+
+
                 //Replace the layout with login fragment
-                replaceFragment(new Login());
+                replaceFragment(LoginPage);
+//                Button LoginBtn = findViewById(LoginPage.login.getId());
+
+
+
 
 
             }
@@ -51,18 +65,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        SignUpFrag.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                SignUpFrag.setVisibility(View.GONE);
-                replaceFragment(new SignUp());
-            }
+//        SignUpFrag.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                SignUpFrag.setVisibility(View.GONE);
+//                replaceFragment(SignUp_Page);
+//            }
+//
+//
+//        });
 
 
-        });
-
-        TextView name = findViewById(R.id.UserName);
-        name.setText("Name");
 
 
 
@@ -72,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
         FragmentManager FM = getSupportFragmentManager();
         FragmentTransaction FT = FM.beginTransaction();
-        FT.replace(R.id.Front_Page, frag);
+        FT.replace(FrontPage.getView().getId(), frag);
         FT.commit();
 
     }

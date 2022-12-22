@@ -31,7 +31,7 @@
         android:textStyle="bold|italic"
 
 
-
+        app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,9 +39,10 @@
 
     <Button
         android:id="@+id/SignUp_Button"
-        android:layout_width="196dp"
+        android:layout_width="154dp"
         android:layout_height="66dp"
         android:layout_marginTop="24dp"
+
 
         android:backgroundTint="#FDD184"
         android:fontFamily="sans-serif"
@@ -51,6 +52,7 @@
         android:textSize="20sp"
         android:textStyle="bold|italic"
 
+        app:cornerRadius="20dp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
