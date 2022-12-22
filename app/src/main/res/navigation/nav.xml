@@ -3,20 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
-    app:startDestination="@id/Calculate">
-
-    <activity
-        android:id="@+id/Calculate"
-        android:name="com.example.test.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
+    app:startDestination="@id/front_Page">
     <fragment
-        android:id="@+id/login2"
+        android:id="@+id/front_Page"
+        android:name="com.example.test.Front_Page"
+        android:label="fragment_front__page"
+        tools:layout="@layout/fragment_front__page" >
+        <action
+            android:id="@+id/action_front_Page_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_front_Page_to_signUp"
+            app:destination="@id/signUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
         android:name="com.example.test.Login"
-        android:label="fragment_login2"
+        android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_login2_to_Calculate"
-            app:destination="@id/Calculate" />
+            android:id="@+id/action_login_to_front_Page"
+            app:destination="@id/front_Page" />
     </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.test.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
 </navigation>

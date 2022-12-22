@@ -2,13 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
+    android:id="@+id/frag_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
     android:background="@color/white"
 
-    android:translationZ="1dp"
+    android:translationZ="20dp"
 
     tools:context=".Login">
 
@@ -40,7 +40,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Login_Button"
+        android:id="@+id/LoginBtn"
         android:layout_width="154dp"
         android:layout_height="66dp"
         android:layout_marginTop="44dp"
@@ -64,6 +64,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="288dp"
+
+
+
         android:autofillHints=""
         android:background="@color/white"
         android:ems="10"
@@ -75,6 +78,7 @@
         android:textColor="@color/black"
 
 
+        android:textColorHint="#171616"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,6 +98,8 @@
 
         android:textColor="@color/black"
         android:background="@color/white"
+        android:textColorHint="#171616"
+
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

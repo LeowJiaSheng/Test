@@ -1,20 +1,20 @@
-package com.example.test;
+package com.example.test.ui;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentResultListener;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.test.R;
 
-public class SignUp extends Fragment {
 
-   View v;
+public class User_Info extends Fragment {
+
+View v;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,40 +29,7 @@ public class SignUp extends Fragment {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        v = inflater.inflate(R.layout.fragment_sign_up, container, false);
+        v = inflater.inflate(R.layout.fragment_user__info, container, false);
         return v;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
