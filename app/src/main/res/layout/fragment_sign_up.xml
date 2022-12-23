@@ -15,8 +15,8 @@
         android:id="@+id/Sign_Up_Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="90dp"
         android:text="SignUp"
         android:textColor="@color/black"
 
@@ -29,7 +29,7 @@
         android:layout_width="154dp"
         android:layout_height="66dp"
         android:layout_marginTop="500dp"
-        android:backgroundTint="#84FDDB"
+        android:backgroundTint="#FDD184"
 
         android:fontFamily="sans-serif"
         android:text="Sign Up"
@@ -92,11 +92,15 @@
 
     <TextView
         android:id="@+id/showTextfromLogin"
-        android:layout_width="76dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="36dp"
-        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:text="Create Your Own Destiny!"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Sign_Up_Title" />
 
