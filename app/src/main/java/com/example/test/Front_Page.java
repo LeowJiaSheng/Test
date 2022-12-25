@@ -2,6 +2,7 @@ package com.example.test;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -18,72 +19,53 @@ import android.widget.Button;
 public class Front_Page extends Fragment {
 
 
-
-
-
-
     View v;
     Button Login,SignUp;
-
-
+    Login LoginPage;
+    SignUp SignUpPage;
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-//        Login = getView().findViewById(R.id.Login_Button);
-//        SignUp = getView().findViewById(R.id.SignUp_Button);
-
-
 
         v = inflater.inflate(R.layout.fragment_front__page, container, false);
+
+
+//Later uncomment it
+//        Login = v.findViewById(R.id.Login_Button);
+//        SignUp = v.findViewById(R.id.SignUp_Button);
+//
+//        Login.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Login.setVisibility(View.GONE);
+//                replaceFragment(R.layout.fragment_front__page,LoginPage);
+//            }
+//        });
+//
+//        SignUp.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                SignUp.setVisibility(View.GONE);
+//                replaceFragment(R.id.Front_Page,SignUpPage);
+//            }
+//        });
+
+
+
+
         return v;
 
     }
 
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//
-//        Button LoginFrag = findViewById(R.id.Login_Button);
-//        Button SignUpFrag = findViewById(R.id.SignUp_Button);
-//
-//
-//        LoginFrag.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                LoginFrag.setVisibility(View.GONE);
-//                replaceFragment(new Login());
-//
-//
-//            }
-//
-//        });
-//
-//
-//        SignUpFrag.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                SignUpFrag.setVisibility(View.GONE);
-//                replaceFragment(new SignUp());
-//            }
-//
-//
-//        });
-//
-//
-//
-//    }
-//
-//    public void replaceFragment(Fragment frag) {
-//
-//        FragmentManager FM = getSupportFragmentManager();
+//    public void replaceFragment(int fragment1, Fragment fragment2){
+//        FragmentManager FM = getActivity().getSupportFragmentManager();
 //        FragmentTransaction FT = FM.beginTransaction();
-//        FT.replace(R.id.Front_Page,frag);
-//        FT.commit();
-//
+//        FT.replace(fragment1,fragment2).commit();
 //    }
+
 
 
 
