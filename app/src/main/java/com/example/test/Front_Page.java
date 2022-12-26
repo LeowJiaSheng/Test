@@ -20,9 +20,9 @@ public class Front_Page extends Fragment {
 
 
     View v;
-    Button Login,SignUp;
-    Login LoginPage;
-    SignUp SignUpPage;
+//    Button Login,SignUp;
+//    Login LoginPage;
+//    SignUp SignUpPage;
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -65,12 +65,5 @@ public class Front_Page extends Fragment {
 //        FragmentTransaction FT = FM.beginTransaction();
 //        FT.replace(fragment1,fragment2).commit();
 //    }
-
-
-
-
-
-
-
 
 }

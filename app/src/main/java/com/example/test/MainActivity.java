@@ -19,7 +19,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Front_Page FrontPage;
+
 
 
 
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
+        Front_Page FrontPage = new Front_Page();
 
         int main = R.layout.activity_main;
         setContentView(main);
@@ -43,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
 
                 }
         });
+
+        worker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                worker.setVisibility(View.GONE);
+                replaceFragment(main,FrontPage);
+            }
+        });
+
+
 
     }
     public void replaceFragment(int fragment1, Fragment fragment2){
