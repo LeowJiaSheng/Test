@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
     public void replaceFragment(int fragment1, Fragment fragment2){
         FragmentManager FM = getSupportFragmentManager();
         FragmentTransaction FT = FM.beginTransaction();

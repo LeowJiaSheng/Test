@@ -20,38 +20,38 @@ public class Front_Page extends Fragment {
 
 
     View v;
-//    Button Login,SignUp;
-//    Login LoginPage;
-//    SignUp SignUpPage;
+    Button Login,SignUp;
+
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
+        Login LoginPage = new Login();
+        SignUp SignUpPage = new SignUp();
 
         v = inflater.inflate(R.layout.fragment_front__page, container, false);
 
 
 //Later uncomment it
-//        Login = v.findViewById(R.id.Login_Button);
-//        SignUp = v.findViewById(R.id.SignUp_Button);
-//
-//        Login.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Login.setVisibility(View.GONE);
-//                replaceFragment(R.layout.fragment_front__page,LoginPage);
-//            }
-//        });
-//
-//        SignUp.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                SignUp.setVisibility(View.GONE);
-//                replaceFragment(R.id.Front_Page,SignUpPage);
-//            }
-//        });
+        Login = v.findViewById(R.id.Login_Button);
+        SignUp = v.findViewById(R.id.SignUp_Button);
+
+        Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Login.setVisibility(View.GONE);
+                replaceFragment(R.id.Front_Page,LoginPage);
+            }
+        });
+
+        SignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SignUp.setVisibility(View.GONE);
+                replaceFragment(R.id.Front_Page,SignUpPage);
+            }
+        });
 
 
 
@@ -60,10 +60,10 @@ public class Front_Page extends Fragment {
 
     }
 
-//    public void replaceFragment(int fragment1, Fragment fragment2){
-//        FragmentManager FM = getActivity().getSupportFragmentManager();
-//        FragmentTransaction FT = FM.beginTransaction();
-//        FT.replace(fragment1,fragment2).commit();
-//    }
+    public void replaceFragment(int fragment1, Fragment fragment2){
+        FragmentManager FM = getActivity().getSupportFragmentManager();
+        FragmentTransaction FT = FM.beginTransaction();
+        FT.replace(fragment1,fragment2).commit();
+    }
 
 }
