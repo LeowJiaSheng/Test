@@ -1,17 +1,22 @@
-package com.example.test;
+package com.example.test.ui;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentResultListener;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.example.test.R;
 
 
-public class UploadPhoto extends Fragment {
+public class SignUp extends Fragment {
 
-    View v;
+   View v;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -41,11 +46,14 @@ public class UploadPhoto extends Fragment {
 
 
 
-
-
-        v = inflater.inflate(R.layout.fragment_upload_photo, container, false);
+        v = inflater.inflate(R.layout.fragment_sign_up, container, false);
         return v;
     }
+
+
+
+
+
 
 
 

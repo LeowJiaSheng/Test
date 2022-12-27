@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.test.ui;
 
 import android.os.Bundle;
 
@@ -8,41 +8,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.test.R;
 
-public class Forgot_Password extends Fragment {
 
-    View v;
+public class Profile extends Fragment {
+
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-
-
-
-
-
-
-
-
-
-        v = inflater.inflate(R.layout.fragment_forgot__password, container, false);
-        return v;
+        return inflater.inflate(R.layout.fragment_profile, container, false);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

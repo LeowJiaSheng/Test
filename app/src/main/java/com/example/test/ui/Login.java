@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.test.ui;
 
 import android.os.Bundle;
 
@@ -13,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.example.test.R;
 
 
 public class Login extends Fragment{

@@ -10,7 +10,7 @@
 
     android:translationZ="20dp"
 
-    tools:context=".Login">
+    tools:context=".ui.Login">
 
     <!-- TODO: Update blank fragment layout -->
 

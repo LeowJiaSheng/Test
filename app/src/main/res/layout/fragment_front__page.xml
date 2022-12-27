@@ -12,7 +12,7 @@
     android:layout_alignParentBottom="true"
     android:background="#000000"
 
-    tools:context=".Front_Page">
+    tools:context=".ui.Front_Page">
 
 
     <Button
