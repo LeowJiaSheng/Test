@@ -2,14 +2,17 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SignUpPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
 
+
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
 
     tools:context=".ui.SignUp">
 
-    <!-- TODO: Update blank fragment layout -->
 
     <TextView
         android:id="@+id/Sign_Up_Title"
@@ -50,11 +53,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:ems="10"
+        android:hint="Email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:hint="Email"
         android:textColorHint="#777575"
-
+        android:textColor="@color/black"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,9 +69,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:ems="10"
+        android:hint="Password"
+        android:textColor="@color/black"
+
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:hint="Password"
         android:textColorHint="#777575"
 
 
@@ -83,6 +88,8 @@
         android:layout_marginTop="184dp"
         android:ems="10"
         android:hint="Name"
+        android:textColor="@color/black"
+
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,7 +113,6 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Sign_Up_Title" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,6 @@
 package com.example.test.ui;
 
 
-
-
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -21,7 +18,7 @@ import com.example.test.R;
 public class MainActivity extends AppCompatActivity {
 
 
-
+    Button customer,worker;
 
 
     @Override
@@ -33,14 +30,15 @@ public class MainActivity extends AppCompatActivity {
         int main = R.layout.activity_main;
         setContentView(main);
 
-        Button customer = findViewById(R.id.Customer_Button);
-        Button worker = findViewById(R.id.Worker_Button);
+        customer = findViewById(R.id.Customer_Button);
+        worker = findViewById(R.id.Worker_Button);
 
         customer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 customer.setVisibility(View.GONE);
-                replaceFragment(main,FrontPage);
+                worker.setVisibility(View.GONE);
+                replaceFragment(R.id.Frame,FrontPage);
 
                 }
         });
@@ -48,14 +46,24 @@ public class MainActivity extends AppCompatActivity {
         worker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                customer.setVisibility(View.GONE);
                 worker.setVisibility(View.GONE);
-                replaceFragment(main,FrontPage);
+                replaceFragment(R.id.Frame,FrontPage);
             }
         });
 
 
 
     }
+
+    //Change to other fragment
+    //replaceFragment   (that fragment layout ID, classname)
+    // Class classname = new Class();
+    //Example: Login login = new Login();
+
+    //change from activity_main to Login
+    //Example
+    //replaceFragment(R.layout.activity_main, Login);
 
     public void replaceFragment(int fragment1, Fragment fragment2){
         FragmentManager FM = getSupportFragmentManager();

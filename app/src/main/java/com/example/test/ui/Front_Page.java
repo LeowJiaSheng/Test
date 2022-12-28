@@ -19,19 +19,19 @@ public class Front_Page extends Fragment {
 
     View v;
     Button Login,SignUp;
-
-
+    Login LoginPage;
+    SignUp SignUpPage;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        Login LoginPage = new Login();
-        SignUp SignUpPage = new SignUp();
+        LoginPage = new Login();
+        SignUpPage = new SignUp();
 
         v = inflater.inflate(R.layout.fragment_front__page, container, false);
 
 
-//Later uncomment it
+
         Login = v.findViewById(R.id.Login_Button);
         SignUp = v.findViewById(R.id.SignUp_Button);
 
@@ -39,6 +39,7 @@ public class Front_Page extends Fragment {
             @Override
             public void onClick(View view) {
                 Login.setVisibility(View.GONE);
+                SignUp.setVisibility(View.GONE);
                 replaceFragment(R.id.Front_Page,LoginPage);
             }
         });
@@ -46,6 +47,7 @@ public class Front_Page extends Fragment {
         SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Login.setVisibility(View.GONE);
                 SignUp.setVisibility(View.GONE);
                 replaceFragment(R.id.Front_Page,SignUpPage);
             }

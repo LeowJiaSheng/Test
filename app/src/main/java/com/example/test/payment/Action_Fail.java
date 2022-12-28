@@ -1,4 +1,4 @@
-package com.example.test.ui;
+package com.example.test.payment;
 
 import android.os.Bundle;
 
@@ -11,16 +11,15 @@ import android.view.ViewGroup;
 import com.example.test.R;
 
 
-public class Profile extends Fragment {
+public class Action_Fail extends Fragment {
 
-View v;
+    View v;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-        v = inflater.inflate(R.layout.fragment_profile, container, false);
+        v = inflater.inflate(R.layout.fragment_action__fail, container, false);
 
 
 
